@@ -52,6 +52,12 @@ The robot continuously repeats this process while navigating the maze:
 
 The robot uses three Modulino distance sensors to detect surrounding walls and determine available paths.
 
+![Sensor Data Collection Flowchart](assets/diagrams/sensor_data_collection_flowchart.png)
+
+The sensor collection process begins by communicating with each distance sensor through the I²C multiplexer. The Arduino then receives the measured distances and converts them into usable navigation data.
+
+The robot collects three primary distance values:
+
 | Sensor | Purpose |
 |---|---|
 | Front Sensor | Detects obstacles and walls directly ahead |
@@ -62,10 +68,10 @@ Each sensor reading is compared against a predefined threshold to classify the s
 
 The sensor states are converted into simple navigation information:
 
-- frontDist, leftDist, rightDist
-- wallInfront, wallOnLeft, wallOnRight
+- `frontDist`, `leftDist`, `rightDist`
+- `wallInfront`, `wallOnLeft`, `wallOnRight`
 
-This processed information is then used by the movement decision algorithm.
+This processed information is then passed to the movement decision algorithm.
 
 
 
