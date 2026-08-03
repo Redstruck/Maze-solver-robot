@@ -7,25 +7,11 @@
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/Redstruck/arduino-maze-solver-robot">
-    <img src="media/images/logo.png" alt="Logo" width="100" height="100">
-  </a>
-
   <h3 align="center">Arduino Maze Solver Robot</h3>
 
   <p align="center">
     An autonomous maze-solving robot built on an Arduino UNO R4 WiFi — 🥇 1st Place at the UCI ICS Intelligent Robotics Summer Academy
-    <br />
-    <a href="#about-the-project"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="#demo">View Demo</a>
-    &middot;
-    <a href="https://github.com/Redstruck/arduino-maze-solver-robot/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/Redstruck/arduino-maze-solver-robot/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -97,7 +83,7 @@ Developed during the **UCI ICS Intelligent Robotics Summer Academy**, this proje
 | Teams | 8 |
 | Maze Size | 6 × 3 grid |
 | Grid Dimensions | 14 × 14 inches |
-| Completion Time | ~46 seconds |
+| Completion Time | ~45 seconds |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -231,7 +217,7 @@ Special thanks to:
 
 [program-shield]: https://img.shields.io/badge/Program-UCI%20ICS%20Intelligent%20Robotics-blue?style=for-the-badge
 
-[solve-shield]: https://img.shields.io/badge/Fastest%20Solve-46%20Seconds-green?style=for-the-badge
+[solve-shield]: https://img.shields.io/badge/Fastest%20Solve-45%20Seconds-green?style=for-the-badge
 
 [product-screenshot]: media/images/robot-demo.png
 [demo-thumbnail]: media/images/demo-thumbnail.png
