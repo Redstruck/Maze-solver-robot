@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# Arduino build artifacts
+*.elf
+*.hex
+*.bin
+*.eep
+*.map
+
+# Temporary files
+*.tmp
+*.log
