@@ -1,69 +1,92 @@
-# Autonomous Maze Solver Robot
+# 🤖 Autonomous Maze Solver Robot
 
-![Robot Image](media/images/placeholder.png)
+![Robot Banner](media/images/banner.png)
+
+<div align="center">
+
+A fully autonomous maze-solving robot built using Arduino C++ and embedded systems techniques.
+
+🏆 **1st Place — UCI ICS Intelligent Robotics Summer Academy Maze Competition**  
+⏱️ **Fastest Completion Time: ~45 seconds**  
+👥 **8 Competing Teams**
+
+</div>
+
+---
 
 ## About The Project
 
-This project is an autonomous maze-solving robot developed during the **UCI ICS Intelligent Robotics Summer Academy**.
+The **Autonomous Maze Solver Robot** is an embedded robotics project developed during the **UCI ICS Intelligent Robotics Summer Academy**.
 
-The robot was designed to independently navigate a grid-based maze using distance sensors, motor control systems, and custom Arduino C++ software. The project involved developing navigation algorithms, debugging hardware and software issues, and improving system reliability through multiple iterations.
+The goal of the project was to design and program a robot capable of independently navigating a grid-based maze using distance sensors, motor control, and custom navigation algorithms.
 
-The final optimized version of the robot achieved **1st place among 8 teams** in the final maze competition, completing the maze in approximately **45 seconds**.
+The robot was programmed entirely in **Arduino C++**, with software responsible for sensor processing, movement decisions, maze navigation, error recovery, and system reliability.
 
----
-
-## Built With
-
-### Hardware
-- Arduino UNO R4 WiFi
-- Distance sensors
-- Motor driver
-- DC motors
-- Robot chassis
-- Battery system
-
-### Software
-- Arduino IDE
-- Arduino C++
-- WiFi-based debugging system
+Throughout development, multiple hardware and software challenges were encountered, including sensor instability and Arduino crashes. These issues were solved through debugging systems, algorithm improvements, and the implementation of a watchdog timer recovery system.
 
 ---
 
-## Features
+# Features
 
-- Autonomous maze navigation
-- Distance sensor-based obstacle detection
-- Custom movement decision algorithm
-- Stuck detection and recovery system
-- Automatic orientation correction
-- Watchdog timer system for Arduino crash recovery
-- WiFi-based sensor debugging
-
----
-
-## Robot Design
-
-![Hardware Components](media/component_collage.png)
-
-The robot was designed to balance size, sensor placement, and movement performance. During development, the team explored improvements such as reducing the robot footprint and adjusting sensor placement to improve navigation accuracy.
+✅ Autonomous maze navigation  
+✅ Distance sensor-based obstacle detection  
+✅ Custom movement decision algorithm  
+✅ Stuck detection and recovery system  
+✅ Automatic orientation correction  
+✅ Arduino watchdog timer crash recovery  
+✅ WiFi-based real-time sensor debugging  
+✅ Optimized movement algorithms for faster completion times  
 
 ---
 
-## Software Versions
+# Built With
 
-This repository contains multiple iterations of the robot's software.
+## Hardware
 
-### Standard Version
+| Component | Purpose |
+|---|---|
+| Arduino UNO R4 WiFi | Main microcontroller |
+| Distance Sensors | Detect maze walls and obstacles |
+| Motor Driver | Controls DC motors |
+| DC Motors | Robot movement |
+| Custom Chassis | Robot structure |
+| Battery System | Power source |
 
-The standard version is the foundation of the maze-solving system.
+## Software
 
-It focuses on consistent autonomous navigation and includes the core:
-- Sensor processing
-- Movement logic
-- Maze-solving decisions
-- Recovery systems
+| Technology | Usage |
+|---|---|
+| Arduino C++ | Robot programming |
+| Arduino IDE | Development environment |
+| WiFi Communication | Sensor debugging |
+| Embedded Systems | Hardware-software integration |
 
-Location:
+---
+
+# Robot Design
+
+![Robot Components](media/component_collage.png)
+
+The robot was designed through multiple iterations to improve navigation performance. During development, the team experimented with factors such as robot size, sensor placement, and movement behavior.
+
+---
+
+# Software Versions
+
+This repository contains different iterations of the robot's navigation software.
+
+## Standard Version
+
+The standard version established the foundation of the autonomous navigation system.
+
+### Includes:
+- Sensor data processing
+- Movement decision logic
+- Maze navigation
+- Recovery mechanisms
+- System stability features
+
+ Location:
 
 ```
 src/maze_solver_standard/
@@ -71,15 +94,22 @@ src/maze_solver_standard/
 
 ---
 
-### Optimized Version
+## Optimized Version
 
-The optimized version builds upon the standard implementation by adjusting movement parameters and navigation behavior to improve maze completion speed.
+The optimized version improved upon the standard implementation by tuning movement parameters and refining navigation behavior to achieve faster maze completion.
 
-It explores the trade-off between faster movement and consistent performance.
+### Improvements:
+- Increased movement speed
+- Adjusted turning behavior
+- Optimized timing parameters
+- Maintained core reliability systems
 
-This version was used during the final competition, where the robot achieved **1st place among 8 teams** with a completion time of approximately **45 seconds**.
+This version was used during the final competition and achieved:
 
-Location:
+ **1st Place among 8 teams**  
+ **~45 second completion time**
+
+📂 Location:
 
 ```
 src/maze_solver_optimized/
@@ -87,42 +117,58 @@ src/maze_solver_optimized/
 
 ---
 
-## Challenges & Solutions
+# Engineering Challenges
 
-### Arduino Stability Issues
+## Arduino Crashes
 
-During development, the Arduino occasionally crashed during operation, requiring manual resets.
+### Problem
+During testing, the Arduino would occasionally freeze and require a manual reset.
 
-To solve this issue, a watchdog timer system was implemented to automatically recover the controller when failures occurred. This significantly improved reliability during testing and competition.
+### Solution
+A watchdog timer system was implemented to automatically detect failures and restart the controller without human intervention.
 
----
-
-### Sensor Debugging
-
-Debugging sensor issues was challenging because sensor readings were difficult to observe while the robot was moving.
-
-A WiFi-based debugging system was created, allowing the Arduino to transmit sensor data to a laptop server for real-time monitoring and troubleshooting.
+This improved reliability and prevented crashes from affecting competition performance.
 
 ---
 
-## Demo
+## Sensor Debugging
 
-![Competition Video](media/videos/placeholder.png)
+### Problem
+Sensor readings were difficult to analyze while the robot was operating.
 
----
-
-## Competition Results
-
-🏆 **1st Place — Final Maze Competition**
-
-- Teams: 8
-- Maze size: 6 × 3 grid
-- Grid size: 14 × 14 inches
-- Completion time: ~45 seconds
+### Solution
+A WiFi debugging system was created where the Arduino transmitted live sensor data to a laptop server, allowing real-time monitoring and troubleshooting.
 
 ---
 
-## Project Structure
+# Demo
+
+![Robot Demo](media/videos/demo_placeholder.png)
+
+*(Competition footage and demonstration videos will be added here.)*
+
+---
+
+# 🏆 Competition Results
+
+<div align="center">
+
+## 🥇 1st Place
+
+### UCI ICS Intelligent Robotics Summer Academy Maze Competition
+
+</div>
+
+| Category | Result |
+|---|---|
+| Teams | 8 |
+| Maze Size | 6 × 3 grid |
+| Grid Dimensions | 14 × 14 inches |
+| Completion Time | ~45 seconds |
+
+---
+
+# Repository Structure
 
 ```
 arduino-maze-solver-robot/
@@ -135,13 +181,27 @@ arduino-maze-solver-robot/
 │   ├── images/
 │   └── videos/
 │
+├── hardware/
+│
 └── README.md
 ```
 
 ---
 
-## Acknowledgments
+# Acknowledgments
 
-- UCI ICS Intelligent Robotics Summer Academy
-- Team members who contributed to the robot design and construction
-- Instructors and mentors who supported the project development
+Special thanks to:
+
+- **UCI ICS Intelligent Robotics Summer Academy** for providing the learning environment and resources
+- My teammates for their contributions to robot construction and design
+- The instructors and mentors who supported the project throughout development
+
+---
+
+# Contact
+
+Created by **Nishad Raghuvanshi**
+
+GitHub: [Your GitHub Profile]
+
+Project Link: [Repository Link]
