@@ -117,10 +117,25 @@ arduino-maze-solver-robot/
 │   ├── images/
 │   └── videos/
 │
-├── hardware/
+├── docs/
+│   ├── hardware.md
+│   ├── algorithm.md
+│   ├── development.md
+│   └── testing.md
 │
 └── README.md
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Documentation
+
+Detailed documentation about the robot's design and development:
+
+- [Hardware Documentation](docs/hardware.md)
+- [Algorithm Explanation](docs/algorithm.md)
+- [Development Process](docs/development.md)
+- [Testing Results](docs/testing.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
