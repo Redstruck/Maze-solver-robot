@@ -3,7 +3,6 @@
 <!-- PROJECT SHIELDS -->
 ![Competition Result][competition-shield]
 ![Fastest Solve][solve-shield]
-![Project Status][status-shield]
 ![Program][program-shield]
 [![MIT License][license-shield]][license-url]
 
@@ -283,8 +282,6 @@ Special thanks to:
 [program-shield]: https://img.shields.io/badge/Program-UCI%20ICS%20Intelligent%20Robotics-blue?style=for-the-badge
 
 [solve-shield]: https://img.shields.io/badge/Fastest%20Solve-45%20Seconds-green?style=for-the-badge
-
-[status-shield]: https://img.shields.io/badge/Status-Completed-success?style=for-the-badge
 
 [product-screenshot]: media/images/robot-demo.png
 [demo-thumbnail]: media/images/demo-thumbnail.png
