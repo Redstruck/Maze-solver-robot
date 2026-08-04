@@ -1,9 +1,9 @@
 <a id="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
-![Competition Result][competition-shield]
-![Fastest Solve][solve-shield]
-![Program][program-shield]
+[![Competition Result][competition-shield]][competition-url]
+[![Fastest Solve][solve-shield]][solve-url]
+[![Program][program-shield]][program-url]
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
@@ -227,14 +227,18 @@ Special thanks to:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [license-shield]: https://img.shields.io/badge/License-MIT-red?style=for-the-badge
 [license-url]: https://github.com/Redstruck/arduino-maze-solver-robot/blob/main/LICENSE.txt
 
 [competition-shield]: https://img.shields.io/badge/Award-1st%20Place%20Winner-FFD700?style=for-the-badge
-
-[program-shield]: https://img.shields.io/badge/Program-UCI%20ICS%20Intelligent%20Robotics-blue?style=for-the-badge
+[competition-url]: #competition-demonstration
 
 [solve-shield]: https://img.shields.io/badge/Fastest%20Solve-46%20Seconds-green?style=for-the-badge
+[solve-url]: #competition-demonstration
+
+[program-shield]: https://img.shields.io/badge/Program-UCI%20ICS%20Intelligent%20Robotics-blue?style=for-the-badge
+[program-url]: https://summeracademy.ics.uci.edu/intelligent-robotics-course-description/
 
 [product-screenshot]: media/images/robot-demo.png
 [demo-thumbnail]: media/images/demo-thumbnail.png
