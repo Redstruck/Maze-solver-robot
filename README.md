@@ -26,7 +26,6 @@
       </ul>
     </li>
     <li><a href="#competition-results">Competition Results</a></li>
-    <li><a href="#demo">Demo</a></li>
     <li><a href="#how-it-works">How It Works</a></li>
     <li><a href="#repository-structure">Repository Structure</a></li>
     <li>
@@ -37,7 +36,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -197,20 +195,6 @@ The repository includes two versions:
   * Uses adjusted movement parameters for faster completion times
 
 _For hardware wiring notes and further documentation, see the `hardware/` folder._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Build autonomous maze-solving robot
-- [x] Implement distance-based navigation
-- [x] Complete final competition maze
-- [x] Achieve 1st Place at UCI ICS Intelligent Robotics Summer Academy Maze Competition
-- [ ] Add competition demonstration videos
-- [ ] Improve movement speed
-- [ ] Add detailed algorithm explanation
-- [ ] Create hardware documentation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
