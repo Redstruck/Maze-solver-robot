@@ -108,17 +108,27 @@ Two versions of the solving logic are included in the repo, tuned differently fo
 ## Repository Structure
 
 ```text
-arduino-maze-solver-robot/
 ├── docs/
 │   ├── assets/
 │   │   ├── diagrams/
+│   │   │   ├── hardware_architecture.png
+│   │   │   ├── main_algorithm_flowchart.png
+│   │   │   └── sensor_data_collection_flowchart.png
+│   │   │
 │   │   ├── graphs/
+│   │   │   └── trial_completion_times.png
+│   │   │
 │   │   └── images/
+│   │       ├── electronics-overview.png
+│   │       ├── robot_bottom_labeled.png
+│   │       └── robot_top_labeled.png
+│   │
 │   ├── README.md
 │   ├── algorithm.md
 │   ├── development.md
 │   ├── hardware.md
 │   └── testing.md
+│
 ├── media/
 │   ├── images/
 │   │   ├── .gitkeep
@@ -131,11 +141,13 @@ arduino-maze-solver-robot/
 │       ├── demo-maze-2.mp4
 │       ├── stuck-recovery.mp4
 │       └── wall-detection-v1.mp4
+│
 ├── src/
 │   ├── maze_solver_optimized/
 │   │   └── maze_solver_optimized.ino
 │   └── maze_solver_standard/
 │       └── maze_solver_standard.ino
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
