@@ -94,16 +94,16 @@ The movement algorithm evaluates the surrounding environment and selects one of 
 - Move forward
 - Turn left
 - Turn right
-- Reverse direction when encountering a dead end
+- Reverse and turn around (for dead ends)
 
 The decision process can be summarized as:
 
 | Sensor Condition | Movement |
-| | |
-| Preferred direction available | Turn toward preferred direction |
-| Forward path available | Continue forward |
-| Alternative path available | Turn toward available path |
-| All paths blocked | Turn around |
+|---|---|
+| Right direction available | Turn Right 90 degrees |
+| Right blocked but Forward path available | Continue forward |
+| Right and Forward blocked but Left available | Turn Left 90 degrees |
+| All paths blocked | Reverse and Turn around |
 
 The exact movement priority can be adjusted between software versions to balance reliability and speed.
 
@@ -185,17 +185,14 @@ Performance may vary depending on:
 - Surface reflectivity
 - Robot alignment
 
-Future improvements could include more advanced mapping, path planning, and adaptive navigation techniques.
-
- 
 
 ## Future Improvements
 
 Potential improvements include:
 
-- Faster sensor processing
-- Dynamic motor speed adjustment
+- Faster sensor processing through better hardware
+- Dynamic motor acceleration and deceleration based on frontDist
+- Emergency wall-stop function
 - Improved turning accuracy
-- More efficient path planning
-- Additional sensor feedback
-- Machine-learning-based navigation strategies
+- Mapping the maze through a matrix and store paths it has visited and not visited yet.
+- Machine-learning-based navigation utilizing Artificial intelligence
