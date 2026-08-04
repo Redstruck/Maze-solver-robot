@@ -167,7 +167,7 @@ The final version successfully completed multiple different maze layouts before 
 
 https://github.com/user-attachments/assets/5ad4e985-8bb6-429d-bc40-1232510f7869
 
-https://github.com/user-attachments/assets/b2950f95-da69-4e71-9404-3c124d75dd02
+https://github.com/user-attachments/assets/f9386f6d-d679-4c7b-8168-fc9375a8573e
 
 https://github.com/user-attachments/assets/4a9a394f-5105-411d-8003-3e2d329cc4b1
 
