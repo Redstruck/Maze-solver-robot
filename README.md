@@ -97,7 +97,9 @@ https://github.com/user-attachments/assets/7b618d96-d567-4311-9a95-02d7791e41bc
 <!-- HOW IT WORKS -->
 ## How It Works
 
-At each step, the robot reads distance measurements from its sensors to detect nearby walls and open paths. That sensor data is fed into a decision-making routine on the Arduino, which selects the next movement — forward, turn, or stop — based on the walls it can currently see. This loop runs continuously as the robot moves, letting it react to the maze in real time without any prior map of the layout.
+At each step, the robot collects distance readings from its sensors to identify nearby walls and available paths. The Arduino processes this sensor data and uses the decision-making routine to choose the next action, such as moving forward, turning, reversing, or stopping. This process repeats continuously while the robot navigates, allowing it to adjust to the maze in real time without needing a pre-built map of the layout.
+
+> **Interested in how the robot makes decisions?** See the [Algorithm Documentation](docs/algorithm.md) to learn more about the solving logic and decision-making process.
 
 Two versions of the solving logic are included in the repo, tuned differently for reliability versus speed (see [Usage](#usage)).
 
