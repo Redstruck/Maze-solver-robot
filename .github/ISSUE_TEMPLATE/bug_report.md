@@ -1,38 +1,36 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: Bug Report
+about: Report a problem with the robot, code, or documentation
+title: "[BUG] "
+labels: bug
 assignees: ''
-
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Description
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+Describe the issue you encountered.
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Expected Behavior
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+What did you expect the robot or software to do?
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## Actual Behavior
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+What happened instead?
 
-**Additional context**
-Add any other context about the problem here.
+## Steps to Reproduce
+
+1.
+2.
+3.
+
+## Hardware / Software Details
+
+- Arduino board:
+- Arduino IDE version:
+- Code version:
+- Hardware configuration:
+
+## Additional Context
+
+Add any screenshots, videos, logs, or other information that may help identify the issue.
