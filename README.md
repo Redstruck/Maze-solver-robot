@@ -45,13 +45,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Maze Solver Robot][product-screenshot]](#demo)
+[![Arduino Maze Solver Robot][product-screenshot]](docs/algorithm.md)
 
-The Arduino Maze Solver Robot is an autonomous robot that navigates through a maze by sensing its environment and making real-time movement decisions — with no human control.
+> **Interested in how the robot makes decisions?** See the [Algorithm Documentation](docs/algorithm.md) to learn how the maze-solving logic works.
 
-The robot uses distance sensors to detect nearby walls, processes that data on an Arduino microcontroller, and drives its motors through a maze-solving algorithm.
-
-It navigates a completely unknown maze using nothing but distance sensors and decision logic — no pre-mapping, no remote control. Multiple software iterations were developed and tuned, trading off accuracy for speed as the design matured, and the robot was proven under real competition conditions.
+The Arduino Maze Solver Robot is an autonomous robot built to navigate mazes without any human control. Using distance sensors, it detects walls and open paths, processes that information on an Arduino microcontroller, and decides where to move in real time based on a maze-solving algorithm.
 
 Developed during the **UCI ICS Intelligent Robotics Summer Academy**, this project competed in the final maze competition and achieved **1st Place**.
 
@@ -240,7 +238,7 @@ Special thanks to:
 [program-shield]: https://img.shields.io/badge/Program-UCI%20ICS%20Intelligent%20Robotics-blue?style=for-the-badge
 [program-url]: https://summeracademy.ics.uci.edu/intelligent-robotics-course-description/
 
-[product-screenshot]: media/images/robot-demo.png
+[product-screenshot]: media/images/robot-hero.png
 [demo-thumbnail]: media/images/demo-thumbnail.png
 
 [Arduino-badge]: https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white
