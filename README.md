@@ -3,7 +3,11 @@
 <!-- PROJECT SHIELDS -->
 [![Competition Result][competition-shield]][competition-url]
 [![Fastest Solve][solve-shield]][solve-url]
-[![Program][program-shield]][program-url]
+
+<a href="https://summeracademy.ics.uci.edu/intelligent-robotics-course-description/" target="_blank">
+  <img src="https://img.shields.io/badge/Program-UCI%20ICS%20Intelligent%20Robotics-blue?style=for-the-badge">
+</a>
+
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
