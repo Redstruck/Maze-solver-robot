@@ -6,7 +6,7 @@ The Arduino Maze Solver Robot is built around an Arduino UNO R4 WiFi microcontro
 ## Hardware Components
 This diagram displays the primary electronic components driving the robot's navigation and power systems:
 
-![Robot Electronics Components](assets/images/electronics-overview.jpg)
+![Robot Electronics Components](assets/images/electronics-overview.png)
 
 | Component | Purpose |
 | :--- | :--- |
