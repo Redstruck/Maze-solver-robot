@@ -83,7 +83,7 @@ Developed during the **UCI ICS Intelligent Robotics Summer Academy**, this proje
 | Teams | 8 |
 | Maze Size | 6 × 3 grid |
 | Grid Dimensions | 14 × 14 inches |
-| Completion Time | ~45 seconds |
+| Completion Time | ~46 seconds |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -232,7 +232,7 @@ Special thanks to:
 
 [program-shield]: https://img.shields.io/badge/Program-UCI%20ICS%20Intelligent%20Robotics-blue?style=for-the-badge
 
-[solve-shield]: https://img.shields.io/badge/Fastest%20Solve-45%20Seconds-green?style=for-the-badge
+[solve-shield]: https://img.shields.io/badge/Fastest%20Solve-46%20Seconds-green?style=for-the-badge
 
 [product-screenshot]: media/images/robot-demo.png
 [demo-thumbnail]: media/images/demo-thumbnail.png
