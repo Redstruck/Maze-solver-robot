@@ -88,11 +88,13 @@ Developed during the **UCI ICS Intelligent Robotics Summer Academy**, this proje
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- DEMO -->
-## Demo
+## Competition Demonstration
 
-Competition footage and demonstration videos will be added here.
+The video below shows the robot autonomously solving the competition maze and earning **1st Place** at the UCI ICS Intelligent Robotics Summer Academy.
 
-[![Watch the Demo][demo-thumbnail]](#demo)
+https://github.com/user-attachments/assets/7b618d96-d567-4311-9a95-02d7791e41bc
+
+> **Interested in the development process?** Additional demonstrations, milestone videos, and engineering documentation are available in the [Development Documentation](docs/development.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
