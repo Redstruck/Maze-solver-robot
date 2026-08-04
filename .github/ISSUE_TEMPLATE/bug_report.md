@@ -34,3 +34,5 @@ What happened instead?
 ## Additional Context
 
 Add any screenshots, videos, logs, or other information that may help identify the issue.
+
+> Note: This project is complete and no longer under active development. Issues and suggestions are welcome, but responses and updates may be limited.
