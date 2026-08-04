@@ -108,6 +108,11 @@ Two versions of the solving logic are included in the repo, tuned differently fo
 ## Repository Structure
 
 ```text
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
+│
 ├── docs/
 │   ├── assets/
 │   │   ├── diagrams/
@@ -123,7 +128,6 @@ Two versions of the solving logic are included in the repo, tuned differently fo
 │   │       ├── robot_bottom_labeled.png
 │   │       └── robot_top_labeled.png
 │   │
-│   ├── README.md
 │   ├── algorithm.md
 │   ├── development.md
 │   ├── hardware.md
@@ -149,8 +153,11 @@ Two versions of the solving logic are included in the repo, tuned differently fo
 │       └── maze_solver_standard.ino
 │
 ├── .gitignore
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── LICENSE
-└── README.md
+├── README.md
+└── SECURITY.md
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
