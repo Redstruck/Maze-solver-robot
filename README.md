@@ -109,20 +109,35 @@ Two versions of the solving logic are included in the repo, tuned differently fo
 
 ```text
 arduino-maze-solver-robot/
-├── src/
-│   ├── maze_solver_standard/
-│   └── maze_solver_optimized/
-│
-├── media/
-│   ├── images/
-│   └── videos/
-│
 ├── docs/
-│   ├── hardware.md
+│   ├── assets/
+│   │   ├── diagrams/
+│   │   ├── graphs/
+│   │   └── images/
+│   ├── README.md
 │   ├── algorithm.md
 │   ├── development.md
+│   ├── hardware.md
 │   └── testing.md
-│
+├── media/
+│   ├── images/
+│   │   ├── .gitkeep
+│   │   └── robot-hero.png
+│   └── videos/
+│       ├── basic-motor-movement.mp4
+│       ├── competition-maze-run.mp4
+│       ├── dead-end-logic.mp4
+│       ├── demo-maze-1.mp4
+│       ├── demo-maze-2.mp4
+│       ├── stuck-recovery.mp4
+│       └── wall-detection-v1.mp4
+├── src/
+│   ├── maze_solver_optimized/
+│   │   └── maze_solver_optimized.ino
+│   └── maze_solver_standard/
+│       └── maze_solver_standard.ino
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
