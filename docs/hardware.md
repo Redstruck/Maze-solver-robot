@@ -19,7 +19,7 @@ This diagram displays the primary electronic components driving the robot's navi
 | **Multidirectional-Bearing** | Allows the robot to have frictionless and multidirectional movement |
 | **Robot Chassis** | Supports the electronics and mechanical components |
 
-## Robot Overview
+## Robot Design
 
 The images below show the completed robot with its major hardware components labeled. Together, the top and bottom views illustrate the placement of the sensors, control electronics, drive system, and power components.
 
