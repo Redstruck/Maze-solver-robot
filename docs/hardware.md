@@ -19,10 +19,23 @@ This diagram displays the primary electronic components driving the robot's navi
 | **Multidirectional-Bearing** | Allows the robot to have frictionless and multidirectional movement |
 | **Robot Chassis** | Supports the electronics and mechanical components |
 
-## Robot Design
-*(Add a picture of your fully assembled robot here)*
+## Robot Overview
 
-The robot was designed to fit within the competition maze dimensions while maintaining enough space for sensors, motors, and electronics.
+The images below show the completed robot with its major hardware components labeled. Together, the top and bottom views illustrate the placement of the sensors, control electronics, drive system, and power components.
+
+### Top View
+
+![Top View of Robot](assets/images/robot_top_labeled.png)
+
+The top view highlights the primary control electronics and sensing components, including the Arduino UNO R4 WiFi, motor shield, I²C multiplexer, and the front, left, and right distance sensors.
+
+### Bottom View
+
+![Bottom View of Robot](assets/images/robot_bottom_labeled.png)
+
+The bottom view illustrates the robot's drivetrain and supporting hardware, including the DC motors, wheels, battery push-button, and other underside components that are not visible from above.
+
+Overall, the robot was designed to fit within the competition maze dimensions while maintaining enough space for sensors, motors, and electronics.
 
 ## Sensor System
 The robot uses multiple distance sensors positioned around the chassis to detect surrounding walls. Because the Modulino Distance Sensors share the same default I2C address, they route through the **Adafruit PCA9546 I2C Multiplexer** so the microcontroller can poll each sensor independently.
