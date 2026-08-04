@@ -229,7 +229,7 @@ Special thanks to:
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [license-shield]: https://img.shields.io/badge/License-MIT-red?style=for-the-badge
-[license-url]: https://github.com/Redstruck/arduino-maze-solver-robot/blob/main/LICENSE.txt
+[license-url]: https://github.com/Redstruck/arduino-maze-solver-robot/blob/main/LICENSE
 
 [competition-shield]: https://img.shields.io/badge/Award-1st%20Place%20Winner-FFD700?style=for-the-badge
 [competition-url]: #competition-demonstration
