@@ -16,8 +16,8 @@ This diagram displays the primary electronic components driving the robot's navi
 | **DRV8835 Motor Driver Shield** | Controls power delivery to the DC motors |
 | **DC Motors** | Provide movement and turning capability |
 | **Battery Pack with Push-Button Switch** | Powers the robot and provides an easy way to turn it on and off |
-| **Robot Chassis** | Supports the electronics and mechanical components |
 | **Multidirectional-Bearing** | Allows the robot to have frictionless and multidirectional movement |
+| **Robot Chassis** | Supports the electronics and mechanical components |
 
 ## Robot Design
 *(Add a picture of your fully assembled robot here)*
