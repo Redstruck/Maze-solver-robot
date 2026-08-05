@@ -180,65 +180,57 @@ Developing an autonomous robot required solving numerous hardware and software i
 
 ### Problem
 
-The robot frequently drifted away from straight paths.
+Previously, the robot frequently drifted and struggled to maintain a straight path due to hardware, specifically the DC motors that it used. As it gradually drifted toward one side of the maze, it would scrape against walls, become misaligned, and sometimes fail to detect or execute turns accurately.
 
 ### Solution
 
-Motor timing was repeatedly adjusted and calibrated through testing until movement became more consistent.
+To prevent the robot from drifting, motor timing and delays were repeatedly adjusted and fine-tuned through testing until movement became more consistent. I also added the misalignment functions `turnRightSlightly()` and `turnLeftSlightly()`, which were called whenever the Modulino distance sensors detected that the robot was too close to either side. These functions allowed the robot to re-align itself before continuing to explore the maze.
 
- 
 
 ## Slow Sensor Updates
 
 ### Problem
 
-Sensor readings were initially too slow for responsive navigation.
+The robot did not receive updated distance measurements from the sensors fast enough, causing it to react too late when approaching walls or openings. This delay resulted in missed turns, late corrections, and occasional collisions because navigation decisions were based on outdated sensor data.
 
 ### Solution
 
-Sensor polling frequency and software timing were optimized to improve responsiveness.
-
- 
+In `readSensors()`, each sensor was read three times to clear the I2C communication buffer, with only the final readings being stored as `frontDist`, `leftDist`, and `rightDist`. I also configured the I2C bus speed using `Wire1.setClock(400000);`, increasing the clock frequency from 100 kHz (Default Mode) to 400 kHz (Fast Mode). This reduced communication delay between the Arduino and the Modulino distance sensors, allowing sensor data to be updated more frequently. Together, these optimizations allowed for more recent distance readings, making the robot significantly more responsive to walls and sudden changes in its environment.
 
 ## False Wall Detection
 
 ### Problem
 
-Occasional inaccurate sensor readings caused unnecessary turns.
+Early versions of the robot used inaccurate sensor distance thresholds, causing it to detect maze openings too early or too late. As a result, the robot would sometimes turn before reaching an opening or continue past it before attempting to turn. 
 
 ### Solution
 
-Detection thresholds were refined through repeated testing to reduce false positives while maintaining reliable wall detection.
-
- 
+I made Distance thresholds into constant variables (`MaxFrontDist` and `MaxSideDist`) so they could be easily adjusted during testing without modifying the robot's navigation logic. The `updateWallStates()` function then compared the live sensor readings against these thresholds to determine whether a wall was present in front, to the left, or to the right. By repeatedly testing and fine-tuning these threshold values on the physical robot, the wall detection became much more reliable, preventing early turns and ensuring the robot only changed direction when it reached a valid maze opening. 
 
 ## Robot Becoming Stuck
 
 ### Problem
 
-During testing the robot occasionally became trapped after unsuccessful turns.
+During testing, the robot would occasionally become stuck after an unsuccessful turn or when its wheels became wedged against a wall. In these situations, the sensor readings also remained almost unchanged, preventing the robot from making progress through the maze.
 
 ### Solution
 
-A dedicated recovery routine was developed to automatically detect and escape these situations.
-
+I wrote a stuck detection system using `checkIfStuck()`, which continuously compared the current sensor readings with the previous values stored in `lastFrontDist`, `lastRightDist`, and `lastLeftDist`. If all three sensor readings remained within `STUCK_TOLERANCE`(15 mm) for longer than `STUCK_TIMEOUT` (900 ms), the function determined that the robot was no longer making progress and triggered `handleStuck()`. This function caused the robot to reverse before choosing the side with more available space based on the distance sensor readings, allowing it to free itself and continue navigating the maze without human intervention.
  
 
-## Wall Alignment Oscillation
+## Arduino Board Crashing
 
 ### Problem
 
-Early wall-alignment logic caused the robot to continuously overcorrect its position.
+During testing, the Arduino would occasionally freeze while the robot was navigating the maze, most likely due to a temporary hardware or power issue such as motor-induced voltage drops (brownouts) or another unexpected fault. Pressing the Arduino's reset button would immediately restart the program, and the robot would continue navigating correctly from its current position. This issue was common among nearly every team in the competition, and the professor even allowed competitors to manually press the reset button during a run if necessary. However, the goal of this project was to build a fully autonomous maze-solving robot, so relying on manual intervention was not considered an acceptable solution.
 
 ### Solution
 
-The alignment algorithm was simplified and tuned to produce smoother movement.
+The Arduino Watchdog Timer library (`WDT.h`) was added, and `WDT.begin(4000);` was called during `setup()` to configure a 4-second watchdog timeout. At the end of every iteration of `loop()`, `WDT.refresh();` reset the watchdog timer after the robot successfully completed one movement cycle, confirming that the program was still running normally. If the code ever froze before reaching `WDT.refresh()`, the watchdog timer would automatically reset the Arduino, allowing the robot to recover without any human intervention and continue operating autonomously. This approach ultimately allowed the robot to recover from an unexpected Arduino crash towards the end of the maze, allowing it to solve the rest and achieve a first-place finish in the Intelligent Robotics Competition.
 
- 
+# Fine Tuning
 
-# Calibration
-
-A significant portion of development involved calibration rather than adding new features.
+A significant portion of development involved fine-tuning existing values rather than adding new features.
 
 Repeated testing was performed to determine values for:
 
