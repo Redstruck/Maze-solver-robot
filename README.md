@@ -66,6 +66,11 @@ Developed during the **UCI ICS Intelligent Robotics Summer Academy**, this proje
 * [![Arduino][Arduino-badge]][Arduino-url]
 * [![Arduino IDE][ArduinoIDE-badge]][ArduinoIDE-url]
 * [![C++][Cpp-badge]][Cpp-url]
+* [![Modulino Library][Modulino-badge]][Modulino-url]
+* [![DRV8835MotorShield Library][DRV8835-badge]][DRV8835-url]
+* [![WDT][WDT-badge]][WDT-url]
+* [![Wire][Wire-badge]][Wire-url]
+* [![stdio][stdio-badge]][stdio-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,6 +198,23 @@ Before running this project, you will need:
 * Required hardware components (see Built With)
 * USB-C cable for programming
 
+### Required Libraries
+
+Install the following Arduino libraries before uploading the code:
+
+- **DRV8835MotorShield** — Controls the motor driver
+- **Modulino** — Interfaces with the distance sensors
+
+To install a library:
+
+1. Open Arduino IDE.
+2. Navigate to:
+   ```
+   Sketch > Include Library > Manage Libraries
+   ```
+3. Search for the library name.
+4. Click **Install**.
+
 ### Installation
 
 1. Clone the repo
@@ -269,3 +291,18 @@ Special thanks to:
 
 [Cpp-badge]: https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white
 [Cpp-url]: https://isocpp.org/
+
+[Modulino-badge]: https://img.shields.io/badge/Modulino-FF7F00?style=for-the-badge
+[Modulino-url]: https://github.com/arduino-libraries/Modulino
+
+[DRV8835-badge]: https://img.shields.io/badge/DRV8835MotorShield-6A0DAD?style=for-the-badge
+[DRV8835-url]: https://github.com/pololu/drv8835-motor-shield-arduino
+
+[WDT-badge]: https://img.shields.io/badge/WDT-2E8B57?style=for-the-badge
+[WDT-url]: https://www.nongnu.org/avr-libc/user-manual/group__avr__watchdog.html
+
+[Wire-badge]: https://img.shields.io/badge/Wire-CC6600?style=for-the-badge
+[Wire-url]: https://docs.arduino.cc/language-reference/en/functions/communication/wire/
+
+[stdio-badge]: https://img.shields.io/badge/stdio-4B4B4B?style=for-the-badge
+[stdio-url]: https://en.cppreference.com/w/c/io
